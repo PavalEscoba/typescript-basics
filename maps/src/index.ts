@@ -1,4 +1,3 @@
-/// <reference types="@types/google.maps" />
 import { User } from './User';
 import { Company } from './Company';
 import { Map } from './customMap';
@@ -8,4 +7,9 @@ const company = new Company();
 console.log(user);
 console.log(company);
 
-new Map('map');
+
+
+const map = new Map('map');
+
+map.addMarker(user);
+map.addMarker(company); 
